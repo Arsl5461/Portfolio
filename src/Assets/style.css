@@ -1,0 +1,495 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: black;
+}
+.my_nav {
+  background-color: rgb(30, 62, 98);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+:root {
+  /* font-size: 62.5%; */
+  /* custom properties */
+  /* 1.Main color */
+  --primary-color: #8d9191;
+  /* 2. secondary color */
+  --secondary-color: #5a5d7e;
+  /* 3. secondary color modify*/
+  --secondary-color-m: #51526d8e;
+  /* 4. tertiary color */
+  --tertiary-color: #9dadad;
+  /* 4. tertiary color modified*/
+  --tertiary-color-m: #16181898;
+}
+
+.nav_link_items {
+  color: #fff;
+  border-bottom: #5a5d7e;
+
+  text-decoration: none;
+  /* border: none; */
+}
+.nav_link_items_d {
+  color: black;
+  text-decoration: none;
+}
+
+.image {
+  background-image: linear-gradient(
+      to top,
+      rgb(0, 12, 24),
+      rgba(0, 12, 24, 0.5)
+    ),
+    url("../Assets/imgs/arslan.jpg");
+  opacity: 0.9;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.navbar-light .navbar-toggler {
+  color: white !important;
+  border-color: #fff !important;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png") !important;
+}
+.heading {
+  padding-top: 17rem;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.Heading__para {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 3px;
+}
+
+/* about */
+.about_main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about_main_1 {
+  width: 50%;
+}
+.about_main_1_top {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.about_main_1_down {
+  padding: 3rem;
+}
+.about_main_2 {
+  width: 50%;
+  text-align: left;
+  padding: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .about_main_2 {
+    width: auto;
+  }
+  .about_main_1 {
+    width: auto;
+  }
+}
+
+/* service card  */
+.service_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+  justify-content: space-evenly;
+  border-radius: 10%;
+}
+@media screen and (max-width: 375px) {
+  .service_card {
+    width: 12rem;
+  }
+}
+.icon_img {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 2rem;
+}
+.service_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05, 1.05);
+  background-color: rgb(30, 62, 98);
+  color: white;
+}
+.card_text {
+  padding: 2rem;
+  text-align: center;
+}
+.card_responsive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Service_card1 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* client  */
+.parallex {
+  background-image: linear-gradient(
+      to top,
+      rgb(0, 12, 24),
+      rgba(0, 12, 24, 0.5)
+    ),
+    url("../Assets/imgs/arslan.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5rem 0rem;
+}
+.client {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.client_com {
+  text-align: center;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  margin: 5rem;
+  font-size: 20px;
+}
+.client_com img {
+  color: #fff;
+}
+.client_com:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05, 1.05);
+}
+.client_h4 {
+  font-size: 15px;
+}
+
+/* portfolio */
+.Portfolio_card1 {
+  margin-top: 3rem;
+  text-align: center;
+}
+.portfolio_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+}
+.portfolioimg {
+  overflow: hidden;
+}
+@media screen and (max-width: 375px) {
+  .portfolio_card {
+    width: 12rem;
+  }
+  .portfolio_img {
+    width: 12rem;
+  }
+}
+.portfolio_img {
+  width: 17rem;
+  transition: all 0.4s;
+}
+.portfolio_card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05, 1.05);
+  background-color: rgb(30, 62, 98);
+  color: white;
+}
+.portfolio_img:hover {
+  transform: scale(1.05, 1.05);
+}
+.portfolio_text {
+  margin: 10px;
+}
+@media screen and (max-width: 375px) {
+  .portfolio_img {
+    width: 12rem;
+  }
+}
+
+/* contact foam */
+
+.parallex1 {
+  background-image: linear-gradient(
+      to top,
+      rgb(0, 12, 24),
+      rgba(0, 12, 24, 0.5)
+    ),
+    url("../Assets/imgs/arslan.jpg");
+  /* min-height: 1000px; */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5rem 0rem 0rem 0rem;
+  padding: 5rem;
+}
+
+.contact-foam {
+  background-color: rgb(255, 255, 255);
+  /* height: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .foam-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .foam_button{
+  display: flex;
+  align-items: center;
+} */
+.contact-foam-1 {
+  width: 50%;
+  padding: 2rem;
+}
+.foam-text {
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  /* background: transparent; */
+  margin: 1rem;
+}
+.contact-foam-2 {
+  width: 50%;
+  padding: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .contact-foam-1 {
+    width: auto;
+    padding: 0.5rem;
+  }
+  .contact-foam-2 {
+    width: auto;
+    padding: 0.5rem;
+  }
+  .foam-text {
+    width: auto;
+  }
+  .btn {
+    width: auto;
+    margin: 0rem;
+  }
+  .parallex1 {
+    padding: 1rem;
+  }
+  .socialmedia a {
+    margin: 0.5rem;
+  }
+}
+.socialmedia a {
+  margin: 1rem;
+}
+.socialmedia img:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
+}
+@media screen and (max-width: 900px) {
+  .socialmedia a {
+    margin: 0.9rem;
+  }
+}
+/* button  */
+
+/* 
+<!-- HTML !-->
+<button class="button-71" role="button">Button 71</button> */
+/* CSS */
+.foam_btn {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 10px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 13.5rem;
+}
+
+.foam_btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.foam_btn:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+@media (max-width: 1024px) {
+  .foam_btn {
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  .foam_btn {
+    margin-left: 3rem;
+  }
+}
+
+/* .btn {
+  background-color: rgb(0, 12, 24);
+  margin: 1rem;
+  width: 100%;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}  */
+
+/* footer  */
+.footer {
+  background-color: rgb(30, 62, 98);
+  height: 100px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.animate {
+  width: 85%;
+  animation: animate1 5s infinite;
+}
+.animate2 {
+  width: 75%;
+  animation: animate2 4s infinite;
+}
+.animate3 {
+  width: 70%;
+  animation: animate3 4s infinite;
+}
+.animate4 {
+  width: 80%;
+  animation: animate4 5s infinite;
+}
+.animate5 {
+  width: 40%;
+  animation: animate5 2.5s infinite;
+}
+.animate6 {
+  width: 50%;
+  animation: animate6 2.7s infinite;
+}
+@keyframes animate1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes animate2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes animate3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes animate4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes animate5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes animate6 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
